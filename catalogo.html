@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafeteria_Avaliação</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="shortcut icon" href="images/Logo-xicara.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                  <img width="150px" src="images/logo_quadrada.jpg" alt="">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="sobre-nos.html">Sobre nós</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="catalogo.html">Catálogo</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="franqueado.html">Seja um Franqueado</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <button id="btnLogin" class="btn btn-outline-warning" type="button" data-bs-toggle="modal" data-bs-target="#modalLogin">Login / Cadastre-se</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <section id="catalogo" class="d-flex flex-column p-4">
+            <h3>Bebidas</h3>
+            <div id="catalogoBebidas" class="d-flex justify-content-center gap-4">
+              
+                <!-- cold brew -->
+                <div class="cardBebidas p-2" style="width: 24rem;">
+                    <img src="images/bebidas/bebida01.jpg" class="card-img-top" alt="café gelado">
+                    <div class="card-body d-flex flex-column align-items-center text-center gap-3">
+                      <h4 class="card-title mt-3">Cold Brew Unión</h4>
+                      <h5>R$28.00</h5>
+                      <button data-bs-target="#modalColdBrew" data-bs-toggle="modal" type="button" class="btn btn-outline-secondary">VER MAIS</button>
+                    </div>
+                  </div>
+
+                  <!-- capuccino -->
+                  <div class="cardBebidas p-2" style="width: 24rem;">
+                    <img src="images/bebidas/bebida02.jpg" class="card-img-top" alt="capuccino">
+                    <div class="card-body d-flex flex-column align-items-center text-center gap-3">
+                      <h4 class="card-title mt-3">Capuccino Tradicional</h4>
+                      <h5>R$22.00</h5>
+                      <button data-bs-target="#modalCapuccino" data-bs-toggle="modal" type="button" class="btn btn-outline-secondary">VER MAIS</button>
+                    </div>
+                  </div>
+
+                  <!-- chocolate quente -->
+                  <div class="cardBebidas p-2" style="width: 24rem;">
+                    <img src="images/bebidas/bebida03.jpg" class="card-img-top" alt="chocolate quente">
+                    <div class="card-body d-flex flex-column align-items-center text-center gap-3">
+                      <h4 class="card-title mt-3">Chocolate Quente</h4>
+                      <h5>R$18.00</h5>
+                      <button data-bs-target="#modalChocQuente" data-bs-toggle="modal" type="button" class="btn btn-outline-secondary">VER MAIS</button>
+                    </div>
+                  </div>
+          </div>
+        </section>
+
+        <section id="catalogo" class="d-flex flex-column p-4">
+          <h3>Comidas</h3>
+          <div id="catalogoBebidas" class="d-flex justify-content-center gap-4">
+            
+              <!-- croissant -->
+              <div class="cardBebidas p-2" style="width: 24rem;">
+                  <img src="images/comidas/croissant.jpg" class="card-img-top" alt="croissant">
+                  <div class="card-body d-flex flex-column align-items-center text-center gap-3">
+                    <h4 class="card-title mt-3">Croissant</h4>
+                    <h5>R$33.00</h5>
+                    <button data-bs-target="#modalCroissant" data-bs-toggle="modal" type="button" class="btn btn-outline-secondary">VER MAIS</button>
+                  </div>
+                </div>
+
+                <!-- mini quiche -->
+                <div class="cardBebidas p-2" style="width: 24rem;">
+                  <img src="images/comidas/quiche.jpg" class="card-img-top" alt="quiche">
+                  <div class="card-body d-flex flex-column align-items-center text-center gap-3">
+                    <h4 class="card-title mt-3">Mini Quiche</h4>
+                    <h5>R$26.00</h5>
+                    <button data-bs-target="#modalQuiche" data-bs-toggle="modal" type="button" class="btn btn-outline-secondary">VER MAIS</button>
+                  </div>
+                </div>
+
+                <!-- muffin -->
+                <div class="cardBebidas p-2" style="width: 24rem;">
+                  <img src="images/comidas/muffin.jpg" class="card-img-top" alt="muffin">
+                  <div class="card-body d-flex flex-column align-items-center text-center gap-3">
+                    <h4 class="card-title mt-3">Muffin</h4>
+                    <h5>R$23.00</h5>
+                    <button data-bs-target="#modalMuffin" data-bs-toggle="modal" type="button" class="btn btn-outline-secondary">VER MAIS</button>
+                  </div>
+                </div>
+        </div>
+      </section>
+        <section id="visitar" class="d-flex flex-column align-items-center p-4">
+            <h5>VENHA NOS VISITAR</h5>
+            <p>Se a conversa “esquentar”, café gelado. E se a conversa “esfriar”, café quente.</p>
+            <div id="cartoes" class="d-flex gap-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/icons/geo.svg" class="card-img-top" alt="localização">
+                    <div class="card-body text-center">
+                    <p class="card-text">Endereço: St. de Industrias Graficas - Brasília, DF.</p>
+                    </div>
+                </div>
+                <div id="whatsapp" class="card" style="width: 18rem;">
+                    <img src="images/icons/whatsapp.svg" class="card-img-top" alt="whatsapp">
+                    <div class="card-body">
+                    <p class="card-text text-center mt-3">
+                        <a href="#">Clique aqui</a>
+                    </p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="images/icons/clock.svg" class="card-img-top" alt="horario">
+                    <div class="card-body">
+                    <p class="card-text text-center mt-3">De segunda a sexta-feira das 9h às 19h.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="d-flex justify-content-center p-4 text-white">
+        Copyright © 2022 UNIÓN CAFÉ
+    </footer>
+
+<!-- Modal Login -->
+<div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="e-mail_uruario" class="col-form-label">E-mail ou Usuário:</label>
+              <input type="email" class="form-control" id="e-mail_uruario">
+            </div>
+            <div class="mb-3">
+              <label for="senha" class="col-form-label">Senha:</label>
+              <input required maxlength="8" type="password" class="form-control" id="senha">
+            </div>
+          </form>
+        </div>
+        <div id="cadastro">
+            <a href="#">Meu primeiro acesso</a>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn-warning">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Modal Bebidas-->
+
+<div class="modal fade" id="modalColdBrew" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+  <div class="modal-content">
+      <div class="modal-header">
+      <h1 class="modal-title fs-5" id="exampleModalLabel">Cold Brew Unión</h1>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h5>R$28.00</h5>
+        <h5>Café especial, uma mistura de café com água fria, que é filtrada após uma infusão de, no mínimo, 12 horas.</h5>
+      </div>
+      <div class="modal-footer">
+      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+      <button type="button" class="btn btn-success">Adicionar ao Carrinho</button>
+      </div>
+  </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalCapuccino" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+  <div class="modal-content">
+      <div class="modal-header">
+      <h1 class="modal-title fs-5" id="exampleModalLabel">Capuccino</h1>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h5>R$22.00</h5>
+        <h5>Uma mistura composta de café, leite, cacau, canela e outros ingredientes selecionados que resulta em uma bebida cremosa e espumante.</h5>
+        <p>Temos opções de leite vegetal - acréscimo de R$2.00.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-success">Adicionar ao Carrinho</button>
+      </div>
+  </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalChocQuente" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+  <div class="modal-content">
+      <div class="modal-header">
+      <h1 class="modal-title fs-5" id="exampleModalLabel">Chocolate Quente</h1>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h5>R$18.00</h5>
+        <h5>Bebida a base de leite e cacau e outros ingredientes selecionados, tornando-se em uma bebida super cremosa e deliciosa.</h5>
+        <p>Temos opções de leite vegetal - acréscimo de R$2.00.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-success">Adicionar ao Carrinho</button>
+      </div>
+  </div>
+  </div>
+</div>
+
+<!-- Modal Comidas -->
+
+<div class="modal fade" id="modalCroissant" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+  <div class="modal-content">
+      <div class="modal-header">
+      <h1 class="modal-title fs-5" id="exampleModalLabel">Croissant</h1>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h5>R$33.00</h5>
+        <h5>Croissant com massa especial acompanhado por um deicioso doce de leite.</h5>
+        <p>Disponibilidade de Croissant Vegano - R$38.00</p>
+      </div>
+      <div class="modal-footer">
+      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+      <button type="button" class="btn btn-success">Adicionar ao Carrinho</button>
+      </div>
+  </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalQuiche" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+  <div class="modal-content">
+      <div class="modal-header">
+      <h1 class="modal-title fs-5" id="exampleModalLabel">Mini Quiche</h1>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h5>R$26.00</h5>
+        <h5>Deliciosas mini quiches de fabricação própria. Verificar as opções de sabores do dia.</h5>
+        <p>Disponibiidade de opções veganas por R$30.00</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-success">Adicionar ao Carrinho</button>
+      </div>
+  </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalMuffin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+  <div class="modal-content">
+      <div class="modal-header">
+      <h1 class="modal-title fs-5" id="exampleModalLabel">Muffin</h1>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h5>R$23.00</h5>
+        <h5>Feitos com ingredientes selecionados, verificar os sabores do dia.</h5>
+        <p>Opções veganas por R$28.00</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-success">Adicionar ao Carrinho</button>
+      </div>
+  </div>
+  </div>
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+</body>
+</html>

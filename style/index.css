@@ -4,6 +4,7 @@
     --corTercearia : #fff4e4;
     --corBranco: #ffffff;
     --corPreto: black;
+    --corLaranja: #fd7e14;
 }
 
 *{
@@ -11,17 +12,14 @@
 }
 
 header, footer{
-    background-color: var(--corPrimaria);
+    background-color: var(--corSecundaria);
     
-}
-
-main{
-    background-color: var(--corTercearia);
 }
 
 .nav-link,.active, .navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
     color: var(--corBranco);
 }
+
 
 .active{
     border-bottom: var(--corTercearia) 3px solid;
@@ -54,3 +52,10 @@ main{
     text-decoration: none;
     color: var(--corPreto);
 }
+
+.cardBebidas {
+    border: none;
+    background-color: #712d0918;
+}
+
+
