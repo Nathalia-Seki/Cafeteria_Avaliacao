@@ -43,6 +43,11 @@ header, footer{
     background-color: var(--corBranco);
 }
 
+#informacoes{
+    display: flex;
+    gap: 30px;
+}
+
 #visitar img{
     height: 60px;
     margin-top: 20px;
