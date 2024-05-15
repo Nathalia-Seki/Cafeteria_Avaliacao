@@ -14,8 +14,8 @@
     <header>
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">
-                  <img width="150px" src="images/logo_quadrada.jpg" alt="">
+              <a class="navbar-brand" href="index.html">
+                  <img width="150px" src="images/logo_quadrada.jpg" alt="logo unión">
               </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -34,7 +34,6 @@
                   <li class="nav-item">
                     <a class="nav-link" href="franqueado.html">Seja um Franqueado</a>
                   </li>
-                  
                 </ul>
                 <form class="d-flex" role="search">
                   <button id="btnLogin" class="btn btn-outline-warning" type="button" data-bs-toggle="modal" data-bs-target="#modalLogin">Login / Cadastre-se</button>
@@ -43,7 +42,6 @@
             </div>
           </nav>
     </header>
-
     <main>
         <section id="banner">
             <div id="carouselExampleCaptions" class="carousel slide">
@@ -89,24 +87,51 @@
             <h3>UNIÓN Café</h3>
             <p>Cafeteria destinada a pessoas que procuram um lugar aconchegante e descontraído. Ideal para tomar um bom café especial a qualquer hora do dia e também pode escolher uma das delícias do cardápio.</p>
         </section>
-        
+        <section id="grupoCartoesBeC" class="d-flex justify-content-center gap-3 pb-5">
+          <div id="tagBebidas" class="grupoBebidasEcomidas">
+            <a href="">
+              <h3>BEBIDAS</h3>
+            </a>
+          </div>
+          <div id="tagComidas" class="grupoBebidasEcomidas">
+              <a href="catalogo.html">
+                <h3>COMIDAS</h3>
+              </a>
+          </div>
+          <div id="tagMuitoMais" class="grupoMais">
+            <a href="catalogo.html">
+              <h3>E muito mais...</h3>
+              <p>Conheça e experimene produtos exclusivos, desenvolvidos especialmente para você.</p>
+            </a>
+            <button id="btnVejaCardapio" type="button">Veja nosso cardápio</button>
+        </div>
+        </section>
+        <section >
+          <section class="d-flex container-fluid p-0 pb-5 m-0 align-items-center gap-4">
+            <div class="col-6" id="imgMuffin"></div>
+            <div class="col-6 p-5" id="textoProdutos">
+              <p>COMPROMISSO COM A QUALIDADE</p>
+              <h1>Fabricação própria, responsabilidade com o frescor e sabor</h1>
+              <p>Nossos processos são otimizados para garantir que todos os produtos sejam entregues fresquinhos para você. Nossas bebidas são preparadas na hora! Nossos pães e doces são produzidos e repostos diariamente. Prezamos pela qualidade e excelência em cada detalhe.</p>
+            </div>  
+          </section>
+        </section>
         <section id="visitar" class="d-flex flex-column align-items-center p-4">
             <h5>VENHA NOS VISITAR</h5>
             <p>Se a conversa “esquentar”, café gelado. E se a conversa “esfriar”, café quente.</p>
             <div id="informacoes">
- 
-                <div class="card" style="width: 18rem;">
+                <div id="localizacao" class="card" style="width: 18rem;">
                     <img src="images/icons/geo.svg" class="card-img-top" alt="localização">
                     <div class="card-body text-center">
                     <p class="card-text">Endereço: St. de Industrias Graficas - Brasília, DF.</p>
+                    <a href="https://maps.app.goo.gl/FgCqepuhsS2SzgwL7" target="_blank">Como chegar?</a>
                     </div>
                 </div>
-                <div id="whatsapp" class="card" style="width: 18rem;">
+                <div id="whatsapp" class="card text-center" style="width: 18rem;">
                     <img src="images/icons/whatsapp.svg" class="card-img-top" alt="whatsapp">
                     <div class="card-body">
-                    <p class="card-text text-center mt-3">
-                        <a href="#">Clique aqui</a>
-                    </p>
+                    <p class="card-text mt-3">Telefone fixo: (61) 0000-0000</p>
+                    <a href="#" target="_blank">Link whatsapp</a>
                     </div>
                 </div>
                 <div class="card" style="width: 18rem;">
@@ -115,12 +140,9 @@
                     <p class="card-text text-center mt-3">De segunda a sexta-feira das 9h às 19h.</p>
                     </div>
                 </div>
- 
-
             </div>
         </section>
     </main>
-
     <footer class="d-flex justify-content-center p-4 text-white">
         Copyright © 2022 UNIÓN CAFÉ
     </footer>

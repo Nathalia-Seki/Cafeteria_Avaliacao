@@ -30,6 +30,61 @@ header, footer{
     color: var(--corBranco);
 }
 
+#tagBebidas{
+    width: 25%;
+    height: 450px;
+    background-image: url(../images/bebidas/bebida02.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grupoBebidasEcomidas a{
+    text-decoration: none;
+    color: var(--corBranco);
+}
+
+#tagComidas{
+    width: 25%;
+    height: 450px;
+    background-image: url(../images/comidas/croissant.jpg);
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#tagMuitoMais{
+    width: 25%;
+    height: 450px;
+    background-color: var(--corTercearia);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.grupoMais a{
+    text-decoration: none;
+    color: var(--corSecundaria);
+}
+
+#btnVejaCardapio{
+    border: none;
+    background-color: transparent;
+    color: var(--corLaranja);
+    font-size: large;
+}
+
+#imgMuffin{
+    width: 50%;
+    height: 600px;
+    background-image: url(../images/comidas/muffin02.jpg);
+    background-size: cover;
+}
+
 #cadastro{
     display: flex;
     justify-content: right;
@@ -51,6 +106,11 @@ header, footer{
 #visitar img{
     height: 60px;
     margin-top: 20px;
+}
+
+#localizacao a{
+    text-decoration: none;
+    color: var(--corPreto);
 }
 
 #whatsapp a{
